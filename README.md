@@ -1,7 +1,4 @@
 # Anti-Duplicator
 
-[TODO. There will be project description]
-
-# Project Goals
-
-The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
+Скрипт принимает на вход папку, просматривает все файлы в ней (и всех подпапках и под-под-...папках) и сообщает, если находит дубликаты.
+Пример запуска: python duplicates.py D:\Downloads\
