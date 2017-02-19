@@ -16,7 +16,8 @@ def get_duplicate_files(path):
             size_list = file_dict.setdefault(item.name, {}).keys()
             if len(size_list):
                 if file_size in size_list:
-                    return_list.append(item.path+" | "+file_dict[item.name][file_size])
+                    return_list.append(item.path+" | " +
+                                       file_dict[item.name][file_size])
             else:
                 file_dict[item.name][file_size] = item.path
     return return_list
@@ -33,6 +34,7 @@ if __name__ == '__main__':
         exit()
 
     path_to_files = get_duplicate_files(path)
+
     print("Deleted duplicate files:")
     if not len(path_to_files):
         print("None")
